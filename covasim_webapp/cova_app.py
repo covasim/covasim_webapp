@@ -317,7 +317,7 @@ def parse_parameters(sim_pars, epi_pars, int_pars, n_days, location, verbose, er
 
 
 @app.register_RPC()
-def run_sim(sim_pars=None, epi_pars=None, int_pars=None, datafile=None, show_animation=False, n_days=90, location=None, verbose=True, die=die):
+def run_sim(sim_pars=None, epi_pars=None, int_pars=None, datafile=None, show_animation=False, n_days=90, location=None, verbose=0.1, die=die):
     ''' Create, run, and plot everything '''
     errs = []
     try:
