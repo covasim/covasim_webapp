@@ -2,20 +2,19 @@
 Covasim Webapp
 ==============
 
-Covasim is a stochastic agent-based simulator designed to be used for COVID-19 (novel coronavirus, SARS-CoV-2) epidemic analyses. These include projections of indicators such as numbers of infections and peak hospital demand. Covasim can also be used to explore the potential impact of different interventions, including social distancing, school closures, testing, contact tracing, quarantine, and vaccination.
+Covasim is a stochastic agent-based simulator for performing COVID-19 analyses. These include projections of indicators such as numbers of infections and peak hospital demand. Covasim can also be used to explore the potential impact of different interventions, including social distancing, school closures, testing, contact tracing, quarantine, and vaccination.
 
-The scientific paper describing Covasim is available at http://paper.covasim.org. The recommended citation is:
+The original scientific paper describing Covasim is available at http://paper.covasim.org. The recommended citation is:
 
-    Kerr CC, Stuart RM, Mistry D, Abeysuriya RG, Hart G, Rosenfeld R, Selvaraj P, Núñez RC, Hagedorn B, George L, Izzo A, Palmer A, Delport D, Bennette C, Wagner B, Chang S, Cohen JA, Panovska-Griffiths J, Jastrzębski M, Oron AP, Wenger E, Famulare M, Klein DJ (2020). **Covasim: an agent-based model of COVID-19 dynamics and interventions**. *medRxiv* 2020.05.10.20097469; doi: https://doi.org/10.1101/2020.05.10.20097469.
+    **Covasim: an agent-based model of COVID-19 dynamics and interventions**. Kerr CC, Stuart RM, Mistry D, Abeysuriya RG, Rosenfeld R, Hart G, Núñez RC, Cohen JA, Selvaraj P, Hagedorn B, George L, Jastrzębski M, Izzo A, Fowler G, Palmer A, Delport D, Scott N, Kelly S, Bennette C, Wagner B, Chang S, Oron AP, Wenger E, Panovska-Griffiths J, Famulare M, Klein DJ (2021). *PLOS Computational Biology* **17** (7): e1009149. doi: https://doi.org/10.1371/journal.pcbi.1009149.
 
 The Covasim webapp is available at http://app.covasim.org.
 
 Note that this repository is the code for the **webapp only**. The main Covasim repository is available at https://github.com/InstituteforDiseaseModeling/covasim. Most users will want to use the main Covasim repository, or access the webapp using the link above. This repository is only needed if you are a developer and wish to run the webapp locally.
 
-Questions or comments can be directed to us at covasim@idmod.org, or on this project's
-GitHub_ page. Full information about Covasim is provided in the Covasim documentation_.
+Questions or comments can be directed to us at info@covasim.org, or on this project's GitHub_ page. Full information about Covasim is provided in the Covasim documentation_.
 
-.. _GitHub: https://github.com/InstituteforDiseaseModeling/covasim_webapp
+.. _GitHub: https://github.com/institutefordiseasemodeling/covasim_webapp
 .. _documentation: https://docs.covasim.org
 
 
@@ -27,7 +26,7 @@ GitHub_ page. Full information about Covasim is provided in the Covasim document
 Requirements
 ============
 
-Python >=3.6 (64-bit). (Note: Python 2 is not supported.)
+Python >=3.8 (64-bit). (Note: Python 2 is not supported.)
 
 We also recommend, but do not require, using Python virtual environments. For
 more information, see documentation for venv_ or Anaconda_.
@@ -49,7 +48,7 @@ Quick start guide
 
 .. code-block:: shell
 
-    python setup.py develop
+    pip install -e .
 
 3. Change to package folder and run the application via Flask:
 
