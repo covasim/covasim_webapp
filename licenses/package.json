@@ -24,7 +24,7 @@
     "polyfill.io": "file:custom/polyfill.io",
     "sciris-js": "0.2.18",
     "themify-icons": "file:custom/themify-icons",
-    "vue": "2.6.11"
+    "vue": "3.0.0"
   },
   "devDependencies": {
     "license-checker": "*"
